@@ -12,6 +12,7 @@ function getWeather() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            console.log(data);  // Yanıtı kontrol et
             if (data.cod === 200) {
                 const weatherInfo = `
                     <h3>${data.name}, ${data.sys.country}</h3>
