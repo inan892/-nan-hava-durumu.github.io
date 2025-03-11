@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hava Durumu</title>
+    <title>Haritadan Hava Durumu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <div class="container">
-        <h2>Hava Durumu</h2>
-        <input type="text" id="city" placeholder="Şehir adı girin...">
-        <button onclick="getWeather()">Hava Durumunu Getir</button>
-        <div id="weatherInfo"></div>
+        <h2>Haritadan Hava Durumu</h2>
+        <p>Haritada bir noktaya tıklayın, hava durumunu görün!</p>
+
+        <div id="map"></div> <!-- Harita alanı -->
+        
+        <div id="weatherInfo"></div> <!-- Hava durumu bilgisi -->
     </div>
+
+    <footer>
+        Made by İnan Ulaş
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
